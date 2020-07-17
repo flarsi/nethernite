@@ -1,0 +1,46 @@
+nav
+  button[type="button"].v-pagination__item.v-pagination__item--active.primary {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#P-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#P-list .list-item {
+  flex-direction: row;
+  height: 100%;
+  margin: 0.5rem;
+}
+
+@media (max-width: 575px) {
+  #P-list .list-item {
+    flex-basis: 75%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #P-list .list-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #P-list .list-item {
+    flex-basis: 20%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #P-list .list-item {
+    flex-basis: 20%;
+  }
+}
+@media (min-width: 1200px) {
+  #P-list .list-item {
+    flex-basis: 17%;
+  }
+}
